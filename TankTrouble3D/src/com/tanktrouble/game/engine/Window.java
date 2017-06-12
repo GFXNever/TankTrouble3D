@@ -17,7 +17,7 @@ import static org.lwjgl.system.MemoryUtil.*;
 public class Window {
 	
 	// Constructors
-	Window(int width,int height,boolean vsync){
+	public Window(int width,int height,boolean vsync){
 		// Init fields
 		this.width = width;
 		this.height = height;
