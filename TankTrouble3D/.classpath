@@ -2,24 +2,24 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl.jar" sourcepath="C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl-sources.jar">
+	<classpathentry kind="lib" path="libs/lwjgl.jar" sourcepath="libs/lwjgl-sources.jar">
 		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl-javadoc.jar!/"/>
+			<attribute name="javadoc_location" value="jar:file:/libs/lwjgl-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl-assimp.jar" sourcepath="C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl-assimp-sources.jar">
+	<classpathentry kind="lib" path="libs/lwjgl-assimp.jar" sourcepath="libs/lwjgl-assimp-sources.jar">
 		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl-assimp-javadoc.jar!/"/>
+			<attribute name="javadoc_location" value="jar:file:/libs/lwjgl-assimp-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl-glfw.jar" sourcepath="C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl-glfw-sources.jar">
+	<classpathentry kind="lib" path="libs/lwjgl-glfw.jar" sourcepath="libs/lwjgl-glfw-sources.jar">
 		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl-glfw-javadoc.jar!/"/>
+			<attribute name="javadoc_location" value="jar:file:/libs/lwjgl-glfw-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl-opengl.jar" sourcepath="C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl-opengl-sources.jar">
+	<classpathentry kind="lib" path="libs/lwjgl-opengl.jar" sourcepath="libs/lwjgl-opengl-sources.jar">
 		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/GFXNever/workspace/TankTrouble/libs/lwjgl-opengl-javadoc.jar!/"/>
+			<attribute name="javadoc_location" value="jar:file:/libs/lwjgl-opengl-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
