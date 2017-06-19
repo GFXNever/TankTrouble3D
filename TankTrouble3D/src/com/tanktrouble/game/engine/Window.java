@@ -16,16 +16,24 @@ import static org.lwjgl.system.MemoryUtil.*;
 
 public class Window {
 	
+	public final int NUM_OF_KEYS = 1024;
+	
 	// Constructors
 	public Window(int width,int height,boolean vsync){
 		// Init fields
 		this.width = width;
 		this.height = height;
 		this.vsync = vsync;
+		this.keys = new boolean[1024];
+		// Set all keys to not pressed
+		for(int i=0; i< NUM_OF_KEYS ; i++){
+			keys[i] = false;
+		}
 		// Init GLFW and Create Window
 		init();
 	}
 	
+	// Helpers
 	private void init(){
 		// Configure GLFW
 		glfwDefaultWindowHints(); // optional, the current window hints are already the default
@@ -46,15 +54,20 @@ public class Window {
 		// Make the OpenGL context current
 		glfwMakeContextCurrent(handle);
 		
+		// Enable v-sync
 		if(this.vsync){
-			// Enable v-sync
 			glfwSwapInterval(1);
 		}
-
+	}
+	
+	// Mutators
+	public void setKeyState(int keyCode,boolean state){
+		keys[keyCode] = state;
+	}
+	public void show(){
 		// Make the window visible
 		glfwShowWindow(handle);
 	}
-	
 	public void cleanup(){
 		// Free the window callbacks and destroy the window
 		glfwFreeCallbacks(handle);
@@ -71,11 +84,19 @@ public class Window {
 	public float getHeight(){
 		return this.height;
 	}
+	public boolean shouldClose(){
+		return glfwWindowShouldClose(handle);
+	}
+	public boolean isKeyPressed(int keyCode) {
+		return keys[keyCode];
+	}
 	
 	// Fields
 	private long handle;
 	private int width;
 	private int height;
 	private boolean vsync;
+	//TODO: Use Enum instead of boolean?
+	private boolean[] keys;
 	
 }
