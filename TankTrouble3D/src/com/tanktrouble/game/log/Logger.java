@@ -49,6 +49,10 @@ public class Logger {
 //		System.out.println("La bunny is trying to escape !!");
 //		while ( catchBunny(la_bunny) ) {
 //			System.out.println("Catch that bunny !");
+//			if(bunny_Itamar.escaped()){
+//				kill(bunny_Itamar);
+//				break;
+//			}
 //		}
 //		System.out.println("Game over// you killed my bunny");
 //	}
