@@ -8,7 +8,7 @@ import com.tanktrouble.game.engine.Window;
 
 public class TankTrouble {
 	private Window window;
-	private RenderingEngine renderEngine;
+//	private RenderingEngine renderEngine;
 	
 	private boolean isGameRunning;
 	
@@ -16,7 +16,7 @@ public class TankTrouble {
 		Settings currentConfig = Settings.getCurrentConfiguration();
 		initGLFW();
 		this.window = new Window(currentConfig.getWidth(), currentConfig.getHeight(), currentConfig.getVsync());
-		this.renderEngine = new RenderingEngine(window);
+//		this.renderEngine = new RenderingEngine(window);
 	}
 
 	private void initGLFW() {
@@ -27,8 +27,8 @@ public class TankTrouble {
 	}
 
 	public void handleGame() {
-		this.window.show();
-		initGame();
+//		this.window.show();
+//		initGame();
 		
 		
 		run();
@@ -36,9 +36,9 @@ public class TankTrouble {
 	}
 	
 	private void run(){
-		while(isGameRunning && !window.isCloseRequested()){
+//		while(isGameRunning && !window.isCloseRequested()){
 			
-		}
+//		}
 	}
 	
 	private void cleanup(){

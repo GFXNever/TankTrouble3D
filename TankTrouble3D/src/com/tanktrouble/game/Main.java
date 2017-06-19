@@ -13,11 +13,11 @@ public class Main implements Runnable{
 	}
 	
 	private static void setNatives(){
-		System.setProperty("org.lwjgl.librarypath", "/libs/");
-		System.setProperty("org.lwjgl.assimp.librarypath", "/libs/");
-		System.setProperty("org.lwjgl.glfw.librarypath", "/libs/");
-		System.setProperty("org.lwjgl.opengl.librarypath", "/libs/");
+//		System.setProperty("java.library.path", "libs/natives/");
+//		System.setProperty("org.lwjgl.librarypath", "libs/natives/");
+//		System.setProperty("org.lwjgl.assimp.librarypath", "libs/");
+//		System.setProperty("org.lwjgl.glfw.librarypath", "libs/");
+//		System.setProperty("org.lwjgl.opengl.librarypath", "libs/");
 		
 	}
 }
-s
