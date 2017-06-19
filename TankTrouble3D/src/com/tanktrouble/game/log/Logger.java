@@ -44,6 +44,7 @@ public class Logger {
 //		la_game.add(new Bunny()); // La Amazing
 //		System.out.println("I want bunnies !!!!!");
 //		Bunny la_bunny = new Bunny();
+//		VoiceGame(); // LETS GO BUNNY
 //		la_bunny.run();
 //		System.out.println("La bunny is trying to escape !!");
 //		while ( catchBunny(la_bunny) ) {
