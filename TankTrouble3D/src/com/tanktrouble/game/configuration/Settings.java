@@ -11,10 +11,15 @@ public final class Settings {
 		return currentConfig;
 	}
 	
-	//Default values
-	private final int width = 1280;
-	private final int height = 720;
-	private final boolean vsync = false;
+	private Settings(){
+		this.width = 1280;
+		this.height = 720;
+		this.vsync = false;
+	}
+	
+	private final int width;
+	private final int height;
+	private final boolean vsync;
 	
 	public int getWidth(){ 
 		return this.width; 
