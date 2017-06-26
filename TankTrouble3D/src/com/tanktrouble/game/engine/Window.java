@@ -19,8 +19,9 @@ public class Window {
 	public final int NUM_OF_KEYS = 1024;
 	
 	// Constructors
-	public Window(int width,int height,boolean vsync){
+	public Window(String title,int width,int height,boolean vsync){
 		// Init fields
+		this.title = title;
 		this.width = width;
 		this.height = height;
 		this.vsync = vsync;
@@ -41,7 +42,7 @@ public class Window {
 		glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE); // the window will be resizable
 
 		// Create the window
-		this.handle = glfwCreateWindow(this.width, this.height, "Hello World!", NULL, NULL);
+		this.handle = glfwCreateWindow(this.width, this.height, this.title, NULL, NULL);
 		if ( this.handle == NULL )
 			throw new RuntimeException("Failed to create the GLFW window");
 		
@@ -93,6 +94,7 @@ public class Window {
 	
 	// Fields
 	private long handle;
+	private String title;
 	private int width;
 	private int height;
 	private boolean vsync;

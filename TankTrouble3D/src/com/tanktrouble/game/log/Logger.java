@@ -1,6 +1,8 @@
 package com.tanktrouble.game.log;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -26,7 +28,13 @@ public class Logger {
 			i++;
 		}
 		fileName += i + ".log";
-		this.logFile = new File("/logs/" + fileName);
+		try {
+			this.logFile = new File("/logs/" + fileName);
+			this.logFile.createNewFile();
+			this.writer = new PrintWriter(this.logFile);
+		} catch (IOException e) {
+			ErrorReporting.consoleError(e);
+		}
 	}
 
 	public static void initializeLogger() {
@@ -38,6 +46,7 @@ public class Logger {
 	}
 	
 	private File logFile;
+	private PrintWriter writer;
 	
 //	static{
 //		Game la_game = new Game();

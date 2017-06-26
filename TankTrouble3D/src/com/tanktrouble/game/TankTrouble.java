@@ -1,5 +1,6 @@
 package com.tanktrouble.game;
 
+import com.tanktrouble.game.reference.References;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
 
@@ -15,7 +16,7 @@ public class TankTrouble {
 	public TankTrouble() {
 		Settings currentConfig = Settings.getCurrentConfiguration();
 		initGLFW();
-		this.window = new Window(currentConfig.getWidth(), currentConfig.getHeight(), currentConfig.getVsync());
+		this.window = new Window(References.TITLE, currentConfig.getWidth(), currentConfig.getHeight(), currentConfig.getVsync());
 //		this.renderEngine = new RenderingEngine(window);
 	}
 
@@ -27,18 +28,18 @@ public class TankTrouble {
 	}
 
 	public void handleGame() {
-//		this.window.show();
+		this.window.show();
 //		initGame();
-		
 		
 		run();
 		cleanup();
 	}
 	
 	private void run(){
-//		while(isGameRunning && !window.isCloseRequested()){
-			
-//		}
+		isGameRunning = true;
+		while(isGameRunning && !window.shouldClose()){
+
+		}
 	}
 	
 	private void cleanup(){
